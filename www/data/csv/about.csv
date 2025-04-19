@@ -1,0 +1,13 @@
+tipo,recurso,version,detalles,licencia,enlaces
+software,R,4.2.2,Lenguaje orientado a la computación estadística,"GPLv3, LGPLv3",https://www.r-project.org/
+software,Rstudio,2022.12.0,IDE para R,AGPL v3 ,https://posit.co/products/open-source/rstudio/
+biblioteca,shiny,1.7.4,framework para construcción de aplicaciones web,GPLv3,https://shiny.rstudio.com/
+assets,Enterprise Dashboard Template,1.0.0,plantilla basada en HTML y diseñada por Appsilon.,LGPL-3.0,https://templates.appsilon.com/
+biblioteca,shiny.i18n,0.3.0,utilidad para traducción en distintos idiomas,MIT,https://appsilon.github.io/shiny.i18n/
+biblioteca,dplyr,1.0.10,gramática y funciones adicionales para el manejo de data frames,MIT,https://dplyr.tidyverse.org/
+biblioteca,RSQLite,2.3.7,Interfaz de SQLite para R,LGPL-3.0,https://github.com/r-dbi/RSQLite
+biblioteca,data.table,1.14.6,Estructura de datos optimizada para R,MPLv2,https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html
+biblioteca,DT,0.26,Interafaz para tablas tipo data.table,GPLv3,https://rstudio.github.io/DT/
+biblioteca,readr,2.1.3 ,Lectura de datos csv,MIT,https://readr.tidyverse.org/
+biblioteca,modules,0.10.0,gestión de módulos en R,Sebastian Warnholz,https://wahani.github.io/modules/
+biblioteca,sass,0.4.4,interfaz para LibSass en R,MIT,https://rstudio.github.io/sass/

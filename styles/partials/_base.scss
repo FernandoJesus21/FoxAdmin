@@ -1,0 +1,136 @@
+body {
+  @include flex-center;
+  background-color: $ashLight;
+  flex-direction: column;
+  margin: 0;
+  min-height: 50vh;
+  padding-top: rem(40px);
+
+  @include mediaFrom($breakSm) {
+    padding: rem(60px) rem(30px) rem(50px);
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+.dashboard {
+  background-color: $white;
+  box-shadow: $boxShadowLarge;
+  max-width: $maxContentWidth;
+  padding: rem(15px);
+  width: 100%;
+  border: 1.5px solid $pal01;
+
+  @include mediaFrom($breakSm) {
+    border-radius: $filletLarge;
+    padding: rem(10px) rem(25px) rem(25px) rem(25px);
+  }
+}
+
+///////////////////////
+
+//botones de las secciones
+.nav-tabs>li {
+    float: center;
+	margin-bottom: 10px;
+}
+
+/*Boton seleccionado*/
+.tabbable > .nav > li[class=active] > a{
+  margin-right: 6px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  //display: inline-block;
+  display:flex;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $pal01;
+  background: $pal01;
+  color: #fff;
+  border-radius: 8em;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  
+ 
+  &:active{
+    transform: scale(0.9);
+    background-color: darken($button-bg, 5%);
+  }
+  
+
+}
+
+/*Botones NO activos*/
+
+.tabbable > .nav > li > a{
+  margin-right: 6px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  //display: inline-block;
+  display:flex;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  -webkit-appearance: none;
+  appearance: none;
+  /*background-color: $gris02;*/
+  color: $pal01;
+  border-radius: 8em;
+  border: 1px solid $pal01;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  
+ 
+  &:active{
+    transform: scale(0.9);
+  }
+  
+}
+
